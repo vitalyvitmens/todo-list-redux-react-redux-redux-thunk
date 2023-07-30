@@ -1,0 +1,211 @@
+.todo {
+	text-decoration: none;
+	padding-right: 20px;
+}
+
+.todoLineThrough {
+	text-decoration: line-through;
+	padding-right: 20px;
+}
+
+.deleteBtn {
+	position: absolute;
+	right: -1em;
+	top: 50%;
+	margin-top: -1em;
+	background: rgb(187, 187, 218);
+	height: 2em;
+	width: 2em;
+	color: red;
+	border: 0.3em solid rgb(248, 237, 206);
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 600;
+	border-radius: 2em;
+}
+
+.deleteBtn:hover {
+	background: rgb(158, 36, 36);
+}
+
+.deleteBtn:active {
+	background: #fff;
+	color: #f0ecec;
+}
+
+.updateBtnYellow {
+	position: absolute;
+	right: 1.25em;
+	top: 50%;
+	margin-top: -1em;
+	background: rgb(221, 221, 14);
+	height: 2em;
+	width: 2em;
+	color: blue;
+	border: 0.3em solid rgb(248, 237, 206);
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 600;
+	border-radius: 2em;
+}
+
+.updateBtnYellow:hover {
+	opacity: 0.8;
+  background: rgb(161, 161, 27);
+}
+
+.updateBtnYellow:active {
+	opacity: 0.5;
+}
+
+.updateBtnGreen {
+	position: absolute;
+	right: 1.25em;
+	top: 50%;
+	margin-top: -1em;
+	background: green;
+	height: 2em;
+	width: 2em;
+	color: blue;
+	border: 0.3em solid rgb(248, 237, 206);
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 600;
+	border-radius: 2em;
+}
+
+.updateBtnGreen:hover {
+	opacity: 0.8;
+  background: rgb(0, 63, 0);
+  color: rgb(170, 170, 248);
+}
+
+.updateBtnGreen:active {
+	opacity: 0.5;
+}
+
+h2 {
+	color: rgb(25, 129, 124);
+	font-size: 1.75rem;
+	text-align: center;
+	margin-top: 0 10px;
+}
+
+h3 {
+	text-align: center;
+	color: black;
+	margin: 10px;
+	padding: 10px;
+}
+
+.form {
+	display: flex;
+}
+
+ol {
+	font: 14px 'Trebuchet MS', 'Lucida Sans';
+	position: relative;
+	padding: 0.4em 2em 0.4em 2em;
+	margin: 0.5em 0;
+	background: #dad2ca;
+	color: #444;
+	text-decoration: none;
+	border-radius: 0.3em;
+	transition: 0.3s ease-out;
+}
+
+ol:hover {
+	background: #afa79f;
+	color: black;
+	font-weight: 600;
+}
+
+ol:hover:before {
+	transform: rotate(360deg);
+}
+
+ol:before {
+	position: absolute;
+	left: -1.3em;
+	top: 50%;
+	margin-top: -1.3em;
+	background: #8fd4c1;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	border: 0.3em solid rgb(248, 237, 206);
+	text-align: center;
+	font-weight: bold;
+	border-radius: 2em;
+	transition: all 0.3s ease-out;
+}
+
+span {
+	position: absolute;
+	left: -1.3em;
+	top: 50%;
+	margin-top: -1.3em;
+	background: #8fd4c1;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	border: 0.3em solid rgb(248, 237, 206);
+	text-align: center;
+	font-weight: bold;
+	border-radius: 2em;
+	transition: all 0.3s ease-out;
+}
+
+span:hover {
+	animation: span 1s infinite;
+}
+
+@keyframes span {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.btnBrown {
+	margin: 15px 35px;
+	margin-bottom: 30px;
+	width: 80%;
+	display: inline-block;
+	font-weight: bold;
+	color: rgb(248, 243, 225);
+	text-decoration: none;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+	user-select: none;
+	padding: 0.7em 1.5em;
+	border: 1px solid rgb(80, 32, 0);
+	border-radius: 5px;
+	outline: none;
+	background: rgb(147, 80, 36)
+		linear-gradient(rgb(106, 58, 26), rgb(147, 80, 36) 80%);
+	box-shadow: 0 6px rgb(86, 38, 6), 0 3px 15px rgba(0, 0, 0, 0.4),
+		inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 3px rgba(255, 255, 255, 0.5);
+	transition: 0.2s;
+}
+
+.btnBrown:hover {
+	background: rgb(167, 91, 41)
+		linear-gradient(rgb(126, 69, 31), rgb(167, 91, 41) 80%);
+}
+
+.btnBrown:active {
+	background: rgb(120, 63, 25)
+		linear-gradient(rgb(120, 63, 25) 20%, rgb(167, 91, 41));
+	box-shadow: 0 2px rgb(86, 38, 6), 0 1px 6px rgba(0, 0, 0, 0.4),
+		inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 3px rgba(255, 255, 255, 0.5);
+	-webkit-transform: translate(0, 4px);
+	transform: translate(0, 4px);
+}
+
+.btnBrown:disabled {
+	background-color: grey;
+	color: rgb(248, 243, 225);
+	opacity: 0.5;
+}
